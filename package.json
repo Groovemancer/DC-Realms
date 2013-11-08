@@ -1,0 +1,36 @@
+{
+  "name": "keleworld",
+  "targetType": "none",
+  "description": "A networked multiplayer RPG with procedurally generated dungeons",
+  "homepage": "https://github.com/Kelet/DC-Realms",
+  "copyright": "Copyright (c) 2013, Kyle Hunter",
+  "authors": [
+    "Kyle Hunter"
+  ],
+
+  "subPackages": [
+    {
+      "name": "client",
+      "targetType": "executable",
+      "targetPath": "bin/",
+      "sourcePaths": ["source/client/", "source/common/"],
+      "importPaths": ["source/client/", "source/common/"],
+      "dependencies": {
+        "derelict-sdl2": "~master",
+        "derelict_extras-enet": "~master",
+        "msgpack-d": "~master"
+      }
+    },
+    {
+      "name": "server",
+      "targetType": "executable",
+      "targetPath": "bin/",
+      "sourcePaths": ["source/server/", "source/common/"],
+      "importPaths": ["source/server/", "source/common/"],
+      "dependencies": {
+        "derelict_extras-enet": "~master",
+        "msgpack-d": "~master"
+      }
+    }
+  ]
+}

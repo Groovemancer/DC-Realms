@@ -1,4 +1,4 @@
-DC-Realms
+Dungeon Crawl Realms
 =========
 
-Dungeon Crawl Realms - A networked multiplayer RPG with procedurally generated dungeons
+A networked multiplayer RPG with procedurally generated dungeons
